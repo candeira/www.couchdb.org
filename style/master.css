@@ -512,7 +512,7 @@ blockquote {
 .icon-contribute {
   background-position: 0 -316px;
 }
-.icon-mailing-list {
+.icon-documentation {
   background-position: 0 -412px;
 }
 .icon-download {
@@ -546,7 +546,7 @@ a.pt-about {
   height: 40px;
 }
 .download-version {
-    display: block;
+  display: block;
 }
 /*---------------------------------------------------
 	Mobile
@@ -681,6 +681,7 @@ a.pt-about {
 @media all and (max-width: 675px) {
   body {
     /*        font-size: 14px;*/
+  
   }
   .leadin img {
     left: -4px;

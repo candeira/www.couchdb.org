@@ -42,8 +42,8 @@ This fabulous linen texture was integrated into the site design.
 
       <div class="menu">
         <a href="#about">About</a>
+        <a href="#documentation">Documentation</a>
         <a href="#contribute">Contribute</a>
-        <a href="#mailing-lists">Mailing Lists</a>
         <a href="#download">Download</a>
         <a href="#more">More&hellip;</a>
       </div>
@@ -51,8 +51,8 @@ This fabulous linen texture was integrated into the site design.
       <form class="menu-dropdown">
         <select onchange="location = this.options[this.selectedIndex].value;">
           <option value="#about">About</option>
+          <option value="#documentation">Documentation</option>
           <option value="#contribute">Contribute</option>
-          <option value="#mailing-lists">Mailing Lists</option>
           <option value="#download">Download</option>
           <option value="#more">More&hellip;</option>
         </select>
@@ -101,6 +101,73 @@ This fabulous linen texture was integrated into the site design.
 
   </div>
 
+  <a class="scroll-point" id="documentation"></a>
+
+  <hr>
+
+  <div class="wrap feature">
+
+    <h2 class="icon icon-documentation">Documentation</h2>
+
+    <p><strong>Would you like to know more?</strong> CouchDB is supported by <a href="http://docs.couchdb.org/en/latest/contents.html">extensive documentation</a> on all aspects of your CouchDB experience.
+
+    <p><strong>Newcomers can read about the features that make CouchDB unique</strong>, like <a href="http://docs.couchdb.org/en/latest/replication/intro.html">master-to-master replication</a> or <a href="http://docs.couchdb.org/en/latest/couchapp/index.html">CouchApps</a> (web applications served directly from CouchDB thanks to the included <a href="http://docs.couchdb.org/en/latest/config/http.html">HTTP server</a> and our JavaScript-powered <a href="http://docs.couchdb.org/en/latest/couchapp/views/index.html">cached Map-Reduce views</a>). If MapReduce sounds daunting, we also have a section providing <a href="http://docs.couchdb.org/en/latest/couchapp/views/nosql.html">CouchDB versions of common SQL operations</a>.
+
+    <p>There are also the <strong>tasks that you need to perform on any software</strong>: <a href="http://docs.couchdb.org/en/latest/install/index.html">installation guides</a> for the major platforms (<a href="http://docs.couchdb.org/en/latest/install/unix.html">Unix/Linux</a> in its many variants, <a href="http://docs.couchdb.org/en/latest/install/mac.html">OS X</a> and <a href="http://docs.couchdb.org/en/latest/install/windows.html">Windows</a>), <a href="http://docs.couchdb.org/en/latest/config/index.html">configuration</a> of all the moving parts (from <a href="">logging</a> to <a href="http://docs.couchdb.org/en/latest/config/auth.html">user authentication and authorization</a>), <a href="http://docs.couchdb.org/en/latest/maintenance/index.html">maintenance and performance tweaks</a>, and much more. 
+
+    <p>And for those with an <strong>ongoing relationship with CouchDB</strong>, there are also the <a href="http://docs.couchdb.org/en/latest/config-ref.html">configuration reference</a>, the <a href="http://docs.couchdb.org/en/latest/http-api.html">HTTP API reference</a>, and the <a href="What's New">What's New</a> section with the history of the project's evolution.
+
+    <p>The CouchDB community has also published <a href=""></a> <a href="https://cwiki.apache.org/confluence/display/COUCHDB/Books">books on CouchDB</a>, maintains the <a href="http://blog.couchdb.org/">official CouchDB blog</a>, a <a href="https://twitter.com/CouchDB">twitter account</a>, helps curate the <a href="http://www.reddit.com/r/couchdb">CouchDB subreddit</a>, and federates related articles around the web in the <a href="http://planet.couchdb.org/">Planet CouchDB</a> website.
+
+    <p>If the documentation doesn't scratch your particular itch, you can always <strong>communicate directly with the community of CouchDB users and programmers</strong> via our <strong>Mailing Lists</strong>: 
+
+  </div>
+
+  <a class="scroll-point" id="mailing-lists"></a>
+
+  <div class="grid">
+
+    <div class="wrap">
+
+      <div class="corner"></div>
+
+      <br/>
+
+      <div class="list-header">
+        <a href="http://markmail.org/search/list:org.apache.couchdb-user/list:org.apache.couchdb-announce/"><strong>Mail Search</strong></a>
+        <p>Search all of our user-oriented mailing lists at once.</p>
+      </div>
+
+      <div class="list mailing-list">
+        <form action="http://markmail.org/search/list:org.apache.couchdb-user/list:org.apache.couchdb-announce/">
+          <input id="search-box" type="text" placeholder="Search query&hellip;" name="q" size="50"><button id="search-button"></button>
+        </form>
+      </div>
+
+      <br>
+
+      <div class="list-header">
+        <a href="http://mail-archives.apache.org/mod_mbox/couchdb-announce/"><strong>Announcement List</strong></a>
+        <a id="announcement-mailing-list" class="hash-target">&nbsp;</a>
+  <a href="mailto:announce-subscribe@couchdb.apache.org">Subscribe</a> &middot;
+  <a href="mailto:announce@couchdb.apache.org">Post</a> &middot;
+  <a href="mailto:announce-unsubscribe@couchdb.apache.org">Unsubscribe</a>
+        <p>This is a low-traffic list for release announcements and security disclosures.</p>
+      </div>
+
+      <div class="list-header">
+        <a href="http://mail-archives.apache.org/mod_mbox/couchdb-user/"><strong>User List</strong></a>
+        <a id="user-mailing-list" class="hash-target">&nbsp;</a>
+  <a href="mailto:user-subscribe@couchdb.apache.org">Subscribe</a> &middot;
+  <a href="mailto:user@couchdb.apache.org">Post</a> &middot;
+  <a href="mailto:user-unsubscribe@couchdb.apache.org">Unsubscribe</a>
+        <p>This is a general discussion and support forum for all CouchDB users.</p>
+      </div>
+    </div>
+
+  </div>
+
+
   <a class="scroll-point" id="contribute"></a>
 
   <hr>
@@ -121,15 +188,11 @@ This fabulous linen texture was integrated into the site design.
 
     <p><strong>Do you want to contribute code? Great!</strong> There&rsquo;s lots of stuff to work on. <strong>Don&rsquo;t know Erlang? Join the <a href="#erlang-mailing-list">Erlang list</a>, and learn you some Erlang in a friendly environment!</strong> You can use JIRA to find <a href="http://s.apache.org/couchdb-easy-issues2">easy</a>, <a href="http://s.apache.org/couchdb-medium-issues2">medium</a>, and <a href="http://s.apache.org/couchdb-hard-issues2">hard</a> issues to work on. Or, if you&rsquo;d prefer, just open a new issue, and attach your patch. Don&rsquo;t want to use JIRA? <a href="https://github.com/apache?query=couchdb">Fork us on GitHub</a> and send a pull request. Why don&rsquo;t you check out the <a href="https://cwiki.apache.org/confluence/display/COUCHDB/Git+workflow">Git workflow</a> guide?
 
+    <p>The <strong>welcoming CouchDB developer community</strong> organises itself around the following <strong>Mailing Lists</strong>:
+
   </div>
 
   <a class="scroll-point" id="mailing-lists"></a>
-
-  <hr>
-
-  <div class="wrap">
-    <h2 class="icon icon-mailing-lists">Mailing Lists</h2>
-  </div>
 
   <div class="grid">
 
@@ -141,7 +204,7 @@ This fabulous linen texture was integrated into the site design.
 
       <div class="list-header">
         <a href="http://mail-archives.apache.org/mod_mbox/couchdb-announce/"><strong>Mail Search</strong></a>
-        <p>Search all of our mailing lists at once.</p>
+        <p>Search all of our developer-oriented mailing lists at once.</p>
       </div>
 
       <div class="list mailing-list">
@@ -151,24 +214,6 @@ This fabulous linen texture was integrated into the site design.
       </div>
 
       <br>
-
-      <div class="list-header">
-        <a href="http://mail-archives.apache.org/mod_mbox/couchdb-announce/"><strong>Announcement List</strong></a>
-        <a id="announcement-mailing-list" class="hash-target">&nbsp;</a>
-	<a href="mailto:announce-subscribe@couchdb.apache.org">Subscribe</a> &middot;
-	<a href="mailto:announce@couchdb.apache.org">Post</a> &middot;
-	<a href="mailto:announce-unsubscribe@couchdb.apache.org">Unsubscribe</a>
-        <p>This is a low-traffic list for release announcements and security disclosures.</p>
-      </div>
-
-      <div class="list-header">
-        <a href="http://mail-archives.apache.org/mod_mbox/couchdb-user/"><strong>User List</strong></a>
-        <a id="user-mailing-list" class="hash-target">&nbsp;</a>
-	<a href="mailto:user-subscribe@couchdb.apache.org">Subscribe</a> &middot;
-	<a href="mailto:user@couchdb.apache.org">Post</a> &middot;
-	<a href="mailto:user-unsubscribe@couchdb.apache.org">Unsubscribe</a>
-        <p>This is a general discussion and support forum for all CouchDB users.</p>
-      </div>
 
       <div class="list-header">
         <a href="http://mail-archives.apache.org/mod_mbox/couchdb-erlang/"><strong>Erlang List</strong></a>
